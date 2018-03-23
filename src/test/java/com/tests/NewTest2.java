@@ -1,3 +1,4 @@
+
 package com.tests;
 
 import java.util.List;
@@ -17,6 +18,7 @@ public class NewTest2 {
 	@Test
 	public void launchChrome()
 	{
+		system.setproperty("Webdriver Chromedriver","");
 		driver=new ChromeDriver();
 		driver.get("http://newtours.demoaut.com/");
 		driver.manage().window().maximize();
